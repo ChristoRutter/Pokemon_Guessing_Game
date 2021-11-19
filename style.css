@@ -11,5 +11,7 @@ p{
     font-size: 30px;
 }
 button{
-    margin-left: 45%;
+    width:30%;
+    margin-left:35%;
+    margin-right:35%;
 }
