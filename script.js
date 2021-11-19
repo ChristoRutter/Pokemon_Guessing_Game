@@ -13,7 +13,7 @@ async function pokeGuess(query,e) {
     e.preventDefault()
     var response = await fetch(`https://pokeapi.co/api/v2/pokemon/${randomPoke}`)
     var apiData = await response.json()
-    if(apiData.name == searchPoke.value){
+    if(apiData.name == searchPoke.value || searchPoke.value == randomPoke){
         alert("You Win!")
         location.reload()
     }
